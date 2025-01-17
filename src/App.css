@@ -1,0 +1,341 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.app-container {
+  min-height: 100vh;
+  padding: 20px;
+  transition: all 0.3s ease;
+}
+
+.dark-mode {
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.dark-mode-toggle {
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  background-color: #333;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.dark-mode .dark-mode-toggle {
+  background-color: #fff;
+  color: #333;
+}
+
+.main-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.form-container {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.dark-mode .form-container {
+  background-color: #2d2d2d;
+}
+
+.metric-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-input {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.dark-mode .form-input {
+  background-color: #333;
+  border-color: #444;
+  color: white;
+}
+
+.submit-btn {
+  padding: 12px 24px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  align-items: center;
+}
+
+.submit-btn:hover {
+  background-color: #0056b3;
+}
+
+.results-container {
+  margin-top: 40px;
+}
+
+.filter-section {
+  margin-bottom: 20px;
+}
+
+.filter-select {
+  padding: 8px;
+  border-radius: 6px;
+  margin-left: 10px;
+}
+
+.chart-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.dark-mode .chart-container {
+  background-color: #2d2d2d;
+}
+
+.metrics-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.dark-mode .metrics-table {
+  background-color: #2d2d2d;
+}
+
+.metrics-table th,
+.metrics-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.dark-mode .metrics-table th,
+.dark-mode .metrics-table td {
+  border-color: #444;
+}
+
+.delete-btn {
+  padding: 6px 12px;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background-color: #c82333;
+}
+
+.no-data-message {
+  text-align: center;
+  padding: 20px;
+  color: #666;
+  font-style: italic;
+}
+
+.dark-mode .no-data-message {
+  color: #999;
+}
+
+.filters-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+}
+
+.dark-mode .filters-toolbar {
+  background-color: #2d2d2d;
+}
+
+.filter-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.filter-group label {
+  font-weight: 500;
+  min-width: 80px;
+}
+
+.filter-select {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background-color: white;
+  min-width: 150px;
+}
+
+.dark-mode .filter-select {
+  background-color: #333;
+  border-color: #444;
+  color: white;
+}
+
+.time-of-day {
+  text-transform: capitalize;
+}
+
+.time-of-day.morning {
+  color: #ff9800;
+}
+
+.time-of-day.afternoon {
+  color: #2196f3;
+}
+
+.time-of-day.evening {
+  color: #9c27b0;
+}
+
+.dark-mode .time-of-day.morning {
+  color: #ffb74d;
+}
+
+.dark-mode .time-of-day.afternoon {
+  color: #64b5f6;
+}
+
+.dark-mode .time-of-day.evening {
+  color: #ce93d8;
+}
+
+.header-controls {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.clear-data-btn {
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  background-color: #dc3545;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.clear-data-btn:hover {
+  background-color: #c82333;
+}
+
+.dark-mode .clear-data-btn {
+  background-color: #bd2130;
+}
+
+.dark-mode .clear-data-btn:hover {
+  background-color: #a71d2a;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.edit-btn {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.edit-btn:hover {
+  background-color: #45a049;
+}
+
+.cancel-btn {
+  background-color: #808080;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.cancel-btn:hover {
+  background-color: #707070;
+}
+
+.form-buttons {
+  display: flex;
+  gap: 10px;
+}
