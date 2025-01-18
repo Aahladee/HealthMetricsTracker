@@ -320,6 +320,8 @@
   background-color: #dc3545;
   color: white;
   transition: all 0.3s ease;
+  /* display: inline-block;
+  visibility: visible; */
 }
 
 .clear-data-btn:hover {

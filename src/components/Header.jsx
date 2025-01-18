@@ -10,7 +10,7 @@ export default function Header(props) {
             onClick={handleClearAll}
             title="Clear all saved metrics"
           >
-            {/* Clear All Data */}
+            Clear All
           </button>
           <button className="dark-mode-toggle" onClick={toggleDarkMode}>
             {darkMode ? "☀️ Light Mode" : "🌙 Dark Mode"}
